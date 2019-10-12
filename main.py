@@ -88,7 +88,7 @@ plt.legend((line1, line2, line3), ("h = 0.1", "h = 0.05", "h = 0.025"), loc="bes
 plt.grid()
 
 step = graphs.add_subplot(2, 2, 3)
-step.set_title("Implicit Euler")
+step.set_title("Trapezoidal rule")
 line1, line2, line3 = step.plot(xEuler[0: n1+1], yTrapezod[0: n1+1], 'r',
                                 xEuler[n1+2: n1+n2+3], yTrapezod[n1+2: n1+n2+3], 'g',
                                 xEuler[n1+n2+4: len(xEuler)-2], yTrapezod[n1+n2+4: len(xEuler)-2], 'k')
